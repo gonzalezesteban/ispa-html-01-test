@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,900;1,200;1,900&family=Permanent+Marker&family=Raleway:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Raleway', sans-serif;
+*/
+
+
+/* 
+CODIGO CSS COMENTADO
+PALETA DE COLORES
+Rojo Claro : #DF1F2D
+Rojo Oscuro: #B11313
+Azul Claro : #447BBE
+Azul Oscuro: #2B3784
+*/
+
+
+/* CLASES GLOBALES */
+
+.bg-color-red-clear 
+{background-color: #DF1F2D;}
+
+.bg-color-red-dark 
+{background-color: #B11313;color: #fff;}
+
+.bg-color-blue-clear 
+{background-color: #447BBE;}
+
+.bg-color-blue-dark 
+{background-color: #2b3784;color: #fff;}
+
+.parallax 
+{
+    /* The image used */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(43, 55, 132, .5)), url("../img/spiderman-gallery3.jpg");
+    /* Full height */
+    height: 85vh;
+    /*vh = 70 viewport height - vw = viewport width*/
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: expansion 5s infinite;
+}
+/* Personalizaciones */
+/* Google fonts most used: Raleway, Roboto, Open Sans, Oswald, Montserrat*/
+body 
+{margin: 0;}
+
+header 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Permanent Marker';
+    font-size: 1.8rem;
+    padding: 20px 0px;
+    transition: all .5s;
+}
+
+h1 
+{animation: expansion-h1 5s infinite;}
+
+h1,p 
+{margin-top: 0;margin-bottom: 0;}
+
+nav ul 
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+nav ul li 
+{
+    padding: 20px 10px;
+    transition: all 500ms;
+}
+
+nav ul li:hover 
+{background-color: #447BBE;}
+
+section 
+{
+    padding: 40px 60px;
+    text-align: center;
+}
+
+section .row 
+{padding: 15px 30px;}
+
+section h2, section button 
+{
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+section h3,section p,section label,input,textarea,footer 
+{
+    font-family: Montserrat;
+    font-weight: 200;
+}
+/* APLICANDO FLEXBOX */
+section#who-am-i div.row 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* FIN APLICANDO FLEXBOX */
+section#who-am-i h3,section#who-am-i h2 
+{text-align: center;}
+
+section#who-am-i div.row p 
+{
+    padding: 10px 40px;
+    width: 50%;
+    text-align: justify;
+}
+
+section#who-am-i img 
+{border-radius: 50px;}
+/* SECCION SERVICES PSEUDO CLASES*/
+
+section#services 
+{height: 85%;}
+
+section#services 
+{
+    text-align: center;
+    color: #fff;
+}
+
+section#services div.row:nth-child(1) 
+{text-align: center;}
+
+section#services div.row:nth-child(2) 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#services div.row:nth-child(2) article:nth-child(odd) 
+{background-color: #2B3784;}
+
+section#services div.row:nth-child(2) article:nth-child(even) 
+{background-color: #B11313;}
+
+section#services div.row article 
+{
+    width: 25%;
+    height: 200px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+section#services div.row article:hover 
+{transform: scale3d(1.2, 1.2, 1.2) rotateY( 360deg) translateZ(50px);}
+
+section#services div.row article h2 
+{font-size: 1.5rem;}
+/* SECCION GALLERY*/
+section#gallery img 
+{
+    transition: all 300ms;
+    width: 400px;
+}
+
+section#gallery img:hover 
+{transform: scale3d(1.5, 1.5, 1.5) rotateY( 180deg) translateY(30px);}
+/* SECCION CONTACT ME*/
+section#contact-me 
+{height: 85%;}
+
+section#contact-me div.row:nth-child(1) 
+{
+    text-align: center;
+    color: #fff;
+}
+
+section#contact-me label 
+{color: #fff;}
+
+section#contact-me form 
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#contact-me form * 
+{
+    background: transparent;
+    color: #fff;
+}
+
+section#contact-me form input,section#contact-me form textarea 
+{
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+section#contact-me form button 
+{
+    cursor: pointer;
+    border: none;
+    background-color: #2B3784;
+    padding: 15px 30px;
+    transition: all 300ms;
+    font-size: 1.15rem;
+    /* font-weight: 200; */
+}
+
+section#contact-me form button:hover 
+{background: #447BBE;}
+/* SECCION FOOTER*/
+footer 
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    background: #2b3784;
+    padding: 8px 0;
+}
+
+footer div.row 
+{padding: 12px 0px;}
+
+footer div.row a,footer div.row p 
+{text-decoration: none;color: #fff;}
+
+footer div.row a 
+{transition: all 300ms;}
+
+footer div.row a:hover
+{font-size: 120%;}
+/* Boton flotante */
+a#btn-floating 
+{
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #B11313;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    padding: 15px 20px;
+    transition: 300ms;
+}
+
+
+/* Animacion*/
+
+@keyframes expansion {
+    from {
+        background-position-y: 25%;
+    }
+    to {
+        background-position-y: 25%;
+    }
+}
+
+@keyframes expansion-h1 {
+    from {
+        font-size: 2em;
+    }
+    to {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Cascading Styles Sheets -->
+    <!-- Hojas de estilos en cascada -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="home" class="bg-color-blue-dark parallax">
+        <h1>Spider-Man</h1>
+        <p>"Tu buen vecino spidey"</p>
+    </header>
+
+    <nav class="bg-color-blue-dark">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#who-am-i">Who Am I</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Who am i -->
+    <section id="who-am-i">
+        <h3>Who is</h3>
+        <h2>Spider-Man</h2>
+        <div class="row">
+            <p>Spider-Man —a veces traducido como Hombre Araña—11​12​ es un personaje creado por los estadounidenses Stan Lee y Steve Ditko,13​14​ e introducido en el cómic Amazing Fantasy n° 15, publicado por Marvel Comics en agosto de 1962.15​ Se trata
+                de un superhéroe que emplea sus habilidades sobrehumanas, reminiscentes de una araña, para combatir a otros supervillanos que persiguen fines siniestros.
+                <br> Su creación se remonta a principios de la década de 1960 a manera de respuesta ante el creciente interés del público adolescente en los cómics y el éxito de Los 4 Fantásticos.16​ Tras su primera aparición en Amazing Fantasy,17​ Marvel
+                decidió producir una serie individual titulada The Amazing Spider-Man, cuyo ejemplar inicial salió a la venta en marzo de 1963.18​ Desde entonces se han distribuido otros varios cómics relacionados con el personaje, así como otros productos
+                que han derivado en el establecimiento de una franquicia de medios.</p>
+
+            <img src="img/spiderman-gallery6.jpg" width="300">
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="parallax">
+        <div class="row">
+            <h2>Services</h2>
+            <p>Ofrezco servicios particulares fuera de tiempo</p>
+        </div>
+
+        <div class="row">
+            <article>
+                <h2>Domiciliario</h2>
+                <p>De mi cocina a tu casa</p>
+            </article>
+            <article>
+                <h2>CumpleSpidey</h2>
+                <p>Bailo contigo</p>
+            </article>
+            <article>
+                <h2>Canta Conmigo</h2>
+                <p>Cantemos juntos</p>
+            </article>
+            <article>
+                <h2>Ayuda 24/7</h2>
+                <p>Cuando te sientas en apuros, llamame y ahi estaré</p>
+            </article>
+            <article>
+                <h2>Personal Trainer</h2>
+                <p>Si quieres estar como yo, sudemos esos kilitos</p>
+            </article>
+            <article>
+                <h2>Deadpool Crossover</h2>
+                <p>Lo que todos esperaban, y nadie creia</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="row">
+            <h2>Gallery</h2>
+            <p>Los mejores momentos de mi vida</p>
+        </div>
+
+        <div class="row">
+            <img src="img/spiderman-gallery1.jpg" width="300">
+            <img src="img/spiderman-gallery2.jpg" width="300">
+            <img src="img/spiderman-gallery4.jpg" width="300">
+            <img src="img/spiderman-gallery5.jpg" width="300">
+        </div>
+    </section>
+
+    <!-- Contact me -->
+    <section id="contact-me" class="parallax">
+
+        <div class="row">
+            <h2>Contáctame</h2>
+            <p>Si tienes problemas no dudes en contactarme, por favor deja tu mensaje</p>
+        </div>
+
+        <form>
+            <label for="id-fullname">Nombre Completo</label>
+            <input type="text" name="fullName" id="id-fullname">
+
+            <label for="id-email">Correo</label>
+            <input type="text" name="email" id="id-email">
+
+            <label for="id-message">Mensaje</label>
+            <textarea name="message" id="id-message" cols="30" rows="10"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="row">
+            <a href="mailto:spidey@gmail.com">Contáctame aquí</a>
+        </div>
+        <div class="row">
+            <p>Copyright 2021 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- AQUI VA UN BOTON FLOTANTE, IMPORTANTE -->
+    <a id="btn-floating" href="#home"><i class="fas fa-arrow-up"></i></a>
+</body>

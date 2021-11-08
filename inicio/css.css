@@ -1,0 +1,13 @@
+div.card img{
+    padding: 10px;
+    border-radius: 32px;
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px -2px #50494940, -1px -1px 7px 1px rgb(0, 0, 0) ;
+    border-radius: 30px;
+    width: 26%;
+    background-color: rgb(255, 196, 0);
+}

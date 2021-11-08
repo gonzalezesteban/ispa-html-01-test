@@ -1,0 +1,31 @@
+.col-example {
+    border-color: rgb(53, 57, 59);
+    background-color: rgb(21, 128, 168);
+    color: rgb(232, 230, 227);
+}
+
+.col-example {
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #33b5e5;
+    color: #fff;
+}
+
+p.hidden {
+    display: none;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 768px) {
+    .col-example {
+        background: rgb(87, 87, 87);
+    }
+    /* .col-example p {
+        display: none;
+    } */
+    p.hidden {
+        display: block;
+    }
+}
